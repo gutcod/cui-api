@@ -7,10 +7,8 @@ const knex = require("knex");
 const db = knex({
   client: "pg",
   connection: {
-    host: "postgresql-lively-97634",
-    user: "",
-    password: "",
-    database: "cui-test",
+    connectionString: process.env.DATABASE_URL,
+    ssl: true,
   },
 });
 

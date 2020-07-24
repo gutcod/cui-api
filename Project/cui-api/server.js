@@ -70,6 +70,6 @@ app.get("/database", (req, res) => {
     .from("cuicuicui")
     .then((data) => res.json(data));
 });
-app.listen(process.env.PORT || 3300, () => {
+app.listen(3300, () => {
   console.log(`app is running on port ${process.env.PORT}`);
 });

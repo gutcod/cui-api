@@ -1,0 +1,31 @@
+{
+  "name": "cui-api",
+  "version": "1.0.0",
+  "description": "api for test kodingTeach",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gutcod/cui-api.git"
+  },
+  "author": "Andrei Gutan <andrei.gutsan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gutcod/cui-api/issues"
+  },
+  "homepage": "https://github.com/gutcod/cui-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.21.2",
+    "node-fetch": "^2.6.0",
+    "pg": "^8.3.0"
+  }
+}

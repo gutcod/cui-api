@@ -64,8 +64,10 @@ async function submit(req, res) {
 app.get("/", (req, res) => res.send("it is working"));
 app.post("/submit", (req, res) => submit(req, res));
 app.get("/database", (req, res) => {
-  res.send(db.cuicuicui);
+  db.select("*")
+    .from("cuicuicui")
+    .then((data) => res.json(data));
 });
-app.listen(3300, () => {
+app.listen(process.env.PORT || 3300, () => {
   console.log(`app is running on port ${process.env.PORT}`);
 });

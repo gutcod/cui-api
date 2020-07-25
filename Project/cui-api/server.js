@@ -35,7 +35,6 @@ async function submit(req, res) {
   );
   let result = await response.json();
   res.json(result.found[0]);
-  console.log(result.found[0]);
   let database = await db("cuicuicui").insert({
     cui: result.found[0].cui,
     data: result.found[0].data,
